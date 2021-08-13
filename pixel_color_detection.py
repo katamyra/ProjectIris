@@ -61,7 +61,7 @@ for pixel in img.getdata():
     dark_blue += 1
 
   # white buffer
-  elif (r_value = g_value = b_valie = 255):
+  elif (r_value = g_value = b_value = 255):
     white += 1
 
 # Accomodate for overlapping of colors

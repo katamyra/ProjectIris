@@ -1,5 +1,5 @@
 from PIL import Image
-img = Image.open("/Users/aryaninamdar/Downloads/AlexHeatmap.png")
+img = Image.open('Heatmap.png')
 
 # all colors to detect
 dark_red = 0 
@@ -15,8 +15,8 @@ white = 0
 # get all pixels
 all_pixels = img.load()
 
-for x in range(1, 1921):
-  for y in range(1, 1081):
+for x in range(0, 1920):
+  for y in range(0, 1080):
     # rgb values
     r_value = all_pixels[x,y][0]
     g_value = all_pixels[x,y][1]
@@ -55,7 +55,7 @@ for x in range(1, 1921):
       dark_blue += 1
 
     # white buffer
-    elif (r_value = g_value = b_valie = 255):
+    elif (r_value == g_value == b_valie == 255):
       white += 1
 
 # Accomodate for overlapping of colors

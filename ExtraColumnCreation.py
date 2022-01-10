@@ -108,11 +108,7 @@ for name in list_of_names:
             #print(type(fpsVal))
             #print(fpsVal)S
             #print(y_coordinates[nested_count])
-            if x >= 1920:
-                x = 1919
-            yVal = y_coordinates[nested_count]
-            if yVal >= 1080:
-                yVal = 1079
+
             composited_index = allLabels[videoNumber][fpsVal][yVal][x]
             composited_indexes.append(composited_index)
             nested_count += 1

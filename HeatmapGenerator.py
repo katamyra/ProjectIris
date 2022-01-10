@@ -8,7 +8,7 @@ from tqdm import tqdm
 
 import csv
 
-# open the file in universal line ending mode
+# open the file in universal line ending mode (rU)
 with open("C:\\Users\\krish\\Downloads\\Data1.csv", 'rU') as infile:
   # read the file as a dictionary for each row ({header : value})
   reader = csv.DictReader(infile)

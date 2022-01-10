@@ -1,14 +1,14 @@
 from PIL import Image
 img = Image.open('Heatmap.png')
 
-# all colors to detect
-dark_red = 0 
-red = 0 
+# all colors to detect set to 0
+dark_red = 0
+red = 0
 orange = 0
-yellow = 0 
-green = 0 
-cyan = 0 
-blue = 0 
+yellow = 0
+green = 0
+cyan = 0
+blue = 0
 dark_blue = 0
 white = 0
 

@@ -50,7 +50,7 @@ with open("C:\\Users\\amira\\Downloads\\Data4.csv", 'rU') as infile:
         data3[header3] = [value3]
 
 with open("C:\\Users\\amira\\Downloads\\Data5.csv", 'rU') as infile:
-# read the file as a dictionary for each row ({header : value})
+# read the file as a dictionary for each row ({header : value}) (data5)
   reader4 = csv.DictReader(infile)
   data4 = {}
   for row4 in reader4:
@@ -358,7 +358,7 @@ y = data2["Coordinate Y"]
 
 for z in range(len(x)):
     if x[z] != 'NaN' and y[z] != 'NaN' :
-      final.append([float(x[z]), float(y[z]), 1])      
+      final.append([float(x[z]), float(y[z]), 1])
 
 x = data3["Coordinate X"]
 y = data3["Coordinate Y"]
@@ -630,7 +630,7 @@ def Fixpos2Densemap(fix_arr, width, height, imgfile, alpha=0.5, threshold=10):
 
 if __name__ == '__main__':
     # Load image file
-    img = cv2.imread('White.png')  
+    img = cv2.imread('White.png')
 
     # Generate toy fixation data
     # when you use, replace here with your data
